@@ -5,6 +5,26 @@
 body {
     background: #222;
     color: #fff;
+    padding-bottom: 50px;
+}
+
+.btn-success {
+    border-radius: 10px !important;
+    background: #008966;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #00BC8C;
+}
+
+.btn-success:focus, .btn-success:active{
+    background: #009670 !important;
+}
+
+.btn-secondary {
+    border-radius: 10px !important;
+    background: none !important;
 }
 
 /* ----------------------HEADER--------------------- */
@@ -56,16 +76,22 @@ body {
 }
 
 .player img{
+    object-fit: cover;
+    width: 200px;
+    height: 155px;
     border-radius: 10px;
 }
 
 .bird-name {
+    margin: 10px 0;
+    padding: 0;
     font-size: 32px;
 }
 
 /* -------------------------BIRDS------------------------ */
 
 .birds {
+    padding: 7.5px 0;
     border-radius: 10px;
     background: #303030;
 }
@@ -111,14 +137,14 @@ body {
 
 .info {
     padding: 20px;
-    min-height: 288px;
+    min-height: 319px;
     border-radius: 10px;
     background: #303030;
 }
 
 .info-start {
     display: block;
-    margin-top: 90px;
+    margin-top: 110px;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -133,4 +159,32 @@ body {
     height: 155px;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.bidr-info-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bidr-info-name, .bidr-info-species {
+    margin-left: 15px;
+}
+
+.bidr-info-description {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* ---------------------------OVER------------------------------ */
+
+.over {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #303030;
+    border-radius: 10px;
 }

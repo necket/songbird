@@ -6,7 +6,7 @@ class Info extends React.Component {
     render() {
         if(this.props.choose === null) {
             return (
-                <div className="col-12 col-lg-6 h-100">
+                <div className="col-12 col-md-6 h-100">
                     <div className="info">
                          <p className="info-start">              
                              Послушайте плеер. <br/>
@@ -17,14 +17,14 @@ class Info extends React.Component {
             )
         } else {
             return (
-                <div className="col-12 col-lg-6 h-100">
+                <div className="col-12 col-md-6 h-100">
                     <div className="info">
                         <div className="info-choose">              
                             <div className="row">
-                                <div className="col-12 col-lg-6">
+                                <div className="col-12 col-md-6">
                                     <img src={this.props.choose.image} alt={this.props.choose.name} className="img-fluid"/>
                                 </div>
-                                <div className="col-12 col-lg-6">
+                                <div className="col-12 col-md-6">
                                     <p className="bidr-info-name">
                                         {this.props.choose.name}
                                     </p>

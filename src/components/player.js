@@ -8,7 +8,7 @@ class Player extends React.Component {
             <div className="player">
                 <div className="row">
                     <div className="col-12 col-lg-3">
-                        <img src={require('./../img/bird.jpg')} alt="bird" className="img-fluid w-100" id="bird-img"/>
+                        <img src={this.props.complete ?  this.props.bird.image : require('./../img/bird.jpg')} alt="bird" className="img-fluid w-100" id="bird-img"/>
                     </div>
                     <div className="col-12 col-lg-9">
                         <ul className="selected-bird list-unstyled mt-4">
