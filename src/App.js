@@ -30,6 +30,7 @@ class App extends React.Component {
       document.querySelector(`#li-${id}`).classList.remove('unused');
       if(id === this.state.answer.id){ // если ответ правильный
         document.querySelector(`#li-${id}`).style.background= '#0f0';
+        document.querySelector('audio').pause();
         playSound(1);
         this.setState({
           complete: true,
@@ -44,7 +45,6 @@ class App extends React.Component {
 
   next = () => {
     if(data.length === lvl + 1) {
-      console.log('over')
       this.setState({
         over: true
       });
