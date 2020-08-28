@@ -13,7 +13,7 @@ let lvl = 0;
 
 class App extends React.Component {
 
-  state = {
+  state = { 
     birds: data[lvl],
     answer: data[lvl][Math.floor(Math.random()*data[lvl].length)],
     choose: null,
